@@ -1,6 +1,7 @@
 # Unix
 alias tlf="tail -f"
 alias ln='ln -v'
+alias rm -rf='rm -rfi'
 alias mkdir='mkdir -p'
 alias ...='../..'
 alias l='ls'
