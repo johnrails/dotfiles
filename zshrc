@@ -49,7 +49,7 @@ ZSH_THEME="honukai"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git rails ruby rvm)
 
 # User configuration
 
@@ -85,5 +85,5 @@ alias pg_start='postgres -D /usr/local/var/postgres'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
