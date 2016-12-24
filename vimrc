@@ -2,52 +2,51 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
+Plug 'MarcWeber/vim-addon-mw-utils'
 " The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
+" Keep Plug commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 " Good looking bottom :)
-Plugin 'bling/vim-airline'
+Plug 'bling/vim-airline'
 " Rails :/
-Plugin 'tpope/vim-rails'
-Plugin 'garbas/vim-snipmate'
+Plug 'tpope/vim-rails'
+Plug 'garbas/vim-snipmate'
 " Commenting and uncommenting stuff
-Plugin 'tomtom/tcomment_vim'
+Plug 'tomtom/tcomment_vim'
 " Beutiful solarized theme
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 " Molokai theme
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 
 
 " Vim Ruby
-Plugin 'vim-ruby/vim-ruby'
+Plug 'vim-ruby/vim-ruby'
 " Surround your code :)
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 " Every one should have a pair (Autogenerate pairs for "{[( )
-Plugin 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs'
 " Tab completions
-Plugin 'ervandew/supertab'
+Plug 'ervandew/supertab'
 " CoffeeScript syntax
-Plugin 'kchmck/vim-coffee-script'
+Plug 'kchmck/vim-coffee-script'
 " Fuzzu finder for vim (CTRL+P)
-Plugin 'kien/ctrlp.vim'
+Plug 'kien/ctrlp.vim'
 " Ruby Tests
-Plugin 'skalnik/vim-vroom'
+Plug 'skalnik/vim-vroom'
 " Easy motion for easy motion
-Plugin 'Lokaltog/vim-easymotion'
+Plug 'Lokaltog/vim-easymotion'
 " Running tests in tmux session
-Plugin 'tpope/vim-dispatch'
+Plug 'tpope/vim-dispatch'
 " Gist pasting
-Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
+Plug 'mattn/gist-vim'
+call plug#end()
 
 " Ruby stuff: Thanks Ben :)
 syntax on                 " Enable syntax highlighting
