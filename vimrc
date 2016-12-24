@@ -14,6 +14,8 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tpope/vim-fugitive'
 " Good looking bottom :)
 Plug 'bling/vim-airline'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'
 " Rails :/
 Plug 'tpope/vim-rails'
 Plug 'garbas/vim-snipmate'
@@ -47,7 +49,6 @@ Plug 'tpope/vim-dispatch'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 call plug#end()
-
 " Ruby stuff: Thanks Ben :)
 syntax on                 " Enable syntax highlighting
 filetype plugin indent on " Enable filetype-specific indenting and plugins
@@ -62,11 +63,12 @@ syntax on                 " Enable syntax highlighting
 " Syntax highlighting and theme
 syntax enable
 set background=dark
-let g:molokai_original=1
+"let g:molokai_original=1
 let g:rehash256=1
 set t_Co=256
 colorscheme molokai
-
+" Navtive file navigator like NERDTree
+let g:netrw_liststyle=3
 " Lovely linenumbers
 set nu
 
